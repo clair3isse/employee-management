@@ -7,6 +7,17 @@ function EmployeeForm({ onAddEmployee, onUpdateEmployee, editEmployee }) {
   const [dateOfJoining, setDateOfJoining] = useState('');
   const [profilePicture, setProfilePicture] = useState('');
 
+  //   useEffect(() => {
+  //   if (editEmployee) {
+  //     setFullName(editEmployee.fullName);
+  //     setJobTitle(editEmployee.jobTitle);
+  //     setDepartment(editEmployee.department);
+  //     setDateOfJoining(editEmployee.dateOfJoining);
+  //     setProfilePicture(editEmployee.profilePicture || '');
+  //   }
+  // }, [editEmployee]);
+
+  
   useEffect(() => {
     if (editEmployee) {
       setFullName(editEmployee.fullName);
